@@ -1,0 +1,50 @@
+.animation-container {
+  position: relative;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+.sky_night {
+  z-index: -2;
+  background: linear-gradient(rgb(33, 37, 41), rgb(73, 83, 135));
+}
+.sky_day {
+  z-index: -1;
+  background: linear-gradient(rgb(135, 206, 235), rgb(255, 255, 255));
+}
+
+.sky {
+  position: absolute;
+  height: calc(100vh - 56px);
+  width: 100%;
+  
+}
+.city__container {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+}
+.city {
+  width: 50vw;
+}
+.sun {
+  width: 5vw;
+  height: 5vw;
+  z-index: 1;
+  position: absolute;
+  background-color: rgb(255, 255, 200);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px rgb(255 230 100), 
+              0 0 25px 10px rgb(255 150 0), 
+              0 0 50px 20px rgb(255 50 0);
+}
+
+.car {
+  z-index: 10;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 10vw;
+}
